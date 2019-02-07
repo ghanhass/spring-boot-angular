@@ -27,7 +27,7 @@ export class CustomerService {
     return this.http.delete(`${this.baseUrl}/${id}`, {responseType: 'text'});
   }
   //
-  getCustomersList(): Observable<Object>{
+  getCustomersList(): Observable<any>{
     return this.http.get( this.baseUrl );
   }
   //
